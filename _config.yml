@@ -1,0 +1,148 @@
+# Site settings
+title: Les1ie
+SEOTitle: 宇宇 | Les1ie's Blog
+header-img: img/home-bg.jpg
+email: iansmith@qq.com
+description: "行百里者半九十。"
+keyword: "computer science, security, hacker"
+url: "https://iansmith123.github.io"              # your host, for absolute URL
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+future: true
+
+
+
+# SNS settings
+RSS: true
+#weibo_username:     Les1ie
+zhihu_username:     iansmith
+github_username:    IanSmith123
+#twitter_username:  null
+#facebook_username: null
+# linkedin_username:  firstname-lastname-idxxxx
+
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+plugins: [jekyll-paginate]
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM # use Github Flavored Markdown !important
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+
+# Disqus settings
+disqus_username: lesi1e
+
+netease_comment: false
+
+# Duoshuo settings
+# duoshuo_username: Les1ie
+# Share component is depend on Comment so we can NOT use share only.
+# duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+
+
+
+
+# Analytics settings
+# Baidu Analytics 
+#ba_track_id: [no no no]
+
+# Google Analytics
+ga_track_id: "UA-107579633-1"
+ga_domain: les1ie.com
+#ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+#ga_domain: huangxuan.me
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "苟有恒,何必三更眠五更起; 最无益,莫过一日曝十日寒。"
+sidebar-avatar: /img/avatar-Les1ie.jpg     # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+page-mathjax: false
+
+
+
+# Friends
+friends: [
+        {
+        title: "旧时博客",
+        href: "http://iansmith.lofter.com"
+      },
+      {
+          title: "grootsec",
+          href: "http://grootsec.org"
+      },
+      {
+        title: "菜鸡kmh",
+        href: "http://webdoger.club"
+      },
+      {
+          title: "『Lightning』",
+          href: "http://lightning-zgc.com"
+      },
+      {
+          title: "阳神",
+          href: "http://wangyang-wy.github.io"
+       },
+       {
+           title: "eax",
+           href: "http://www.reverse.dog"
+       },
+       {
+           title: "idid",
+           href: "http://ididsec.com"
+       },
+       {
+          title: "易诗雷",
+          href: "http://chanchan.me"
+       },
+        {
+          title: "xpc",
+          href: "https://xiaopc.org"
+       },
+      {
+          title: "本辣鸡",
+          href: "http://les1ie.com/about"
+      },
+      {
+          title: "hurricane618",
+          href: "http://hurricane618.me"
+      }
+    ]
+
